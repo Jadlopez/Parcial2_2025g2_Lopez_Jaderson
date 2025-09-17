@@ -1,0 +1,203 @@
+/* ================================
+   RESET
+================================ */
+body.projects-page {
+  background-color: #0d1117 !important;
+  color: #d61935 !important;
+  padding-top: 10px;
+}
+
+.projects-page .hero-projects,
+.projects-page .portfolio-section,
+.projects-page .project-card {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* ================================
+   HERO PROYECTOS
+================================ */
+.hero-projects {
+  min-height: 60vh;
+  background: linear-gradient(135deg, #1a1a2e, #16213e) !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  padding: 7rem 1rem 3rem;
+  overflow: hidden;
+}
+
+.hero-projects #particles-js-projects {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+.hero-projects .container {
+  position: relative;
+  z-index: 2;
+  animation: fadeIn 1.2s ease both;
+}
+
+.hero-projects h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  background: linear-gradient(90deg, #00c6ff, #6f42c1, #20c997);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1rem;
+}
+
+.hero-projects p {
+  font-size: 1.2rem;
+  color: #a8b2d1 !important;
+  margin-top: 0.5rem;
+  line-height: 1.6;
+  animation: fadeUp 1.5s ease both;
+}
+
+/* ================================
+   PORTFOLIO SECTION
+================================ */
+.portfolio-section {
+  padding: 4rem 0;
+  background: #dee1e5 !important;
+}
+
+.portfolio-section h3 {
+  font-size: 2.2rem;
+  background: linear-gradient(90deg, #0dcaf0, #20c997, #6f42c1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 1rem;
+}
+
+.portfolio-section p {
+  color: #8892b0 !important;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 3rem;
+}
+
+/* ================================
+   PROJECT CARDS
+================================ */
+.project-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1.2rem;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  border: 1px solid rgba(45, 55, 70, 0.6) !important;
+  height: 100%;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(12px);
+}
+
+.project-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 1.2rem;
+  transition: transform 0.6s ease, filter 0.6s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 30px rgba(0, 198, 255, 0.35),
+              0 0 25px rgba(111, 66, 193, 0.25);
+}
+
+.project-card:hover img {
+  transform: scale(1.1);
+  filter: brightness(0.75);
+}
+
+/* Overlay */
+.project-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  background: linear-gradient(135deg, rgba(0, 198, 255, 0.85), rgba(111, 66, 193, 0.85));
+  color: #fff;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.5s ease;
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 1.2rem;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.project-overlay h5 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: linear-gradient(90deg, #ce0609, #6f42c1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
+
+.project-overlay p {
+  font-size: 0.95rem;
+  color: #f9e1e6 !important;
+  max-width: 90%;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* ================================
+   ANIMACIONES
+================================ */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ================================
+   MEDIA QUERIES
+================================ */
+@media (min-width: 768px) {
+  .hero-projects { min-height: 65vh; padding: 8rem 1.5rem 3rem; }
+  .hero-projects h1 { font-size: 3.2rem; }
+  .portfolio-section h3 { font-size: 2rem; }
+  .project-card img { height: 260px; }
+}
+
+@media (min-width: 1024px) {
+  .hero-projects { min-height: 70vh; padding: 9rem 2rem 4rem; }
+  .hero-projects h1 { font-size: 3.8rem; }
+  .portfolio-section h3 { font-size: 2.4rem; }
+  .project-card img { height: 280px; }
+}
+
+@media (max-width: 375px) {
+  .hero-projects { padding: 5rem 0.5rem 1.5rem; min-height: 50vh; }
+  .hero-projects h1 { font-size: 1.9rem; }
+  .project-card img { height: 200px; }
+}

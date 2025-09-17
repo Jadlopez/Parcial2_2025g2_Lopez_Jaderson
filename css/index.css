@@ -1,0 +1,183 @@
+body.index-page {
+  background-color: #f9fafc !important;
+  color: #333 !important;
+}
+
+.index-page .hero,
+.index-page .intro, 
+.index-page .servicios {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.hero {
+  min-height: 100vh;
+  position: relative;
+  background: linear-gradient(135deg, #1a1a2e, #16213e) !important;
+  overflow: hidden;
+}
+
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.hero .container {
+  padding-top: 7rem;
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 3.5rem !important;
+  color: #fff !important;
+  text-shadow: 0 0 25px rgba(0, 255, 255, 0.5);
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.hero p {
+  font-size: 1.2rem !important;
+  color: #ddd !important;
+}
+
+/* ========== INTRO (Específico de inicio) ========== */
+.intro h2 {
+  font-size: 2.2rem !important;
+  color: #111 !important;
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.intro p {
+  font-size: 1.05rem !important;
+  color: #555 !important;
+}
+
+.intro img {
+  border-radius: 1rem;
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.intro img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* ========== SERVICIOS (Específico de inicio) ========== */
+.servicios {
+  background: linear-gradient(180deg, #f9fafc, #eef2f7) !important;
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+}
+
+.service-icon {
+  font-size: 2.5rem !important;
+  color: #007bff !important;
+}
+
+.service-img {
+  max-height: 140px;
+  object-fit: contain;
+  transition: transform 0.5s ease;
+}
+
+.card.glass {
+  background: rgba(255, 255, 255, 0.12) !important;
+  backdrop-filter: blur(20px) !important;
+  border: none !important;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.card.glass:hover {
+  transform: translateY(-12px) scale(1.03);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.25);
+}
+
+.card.glass:hover .service-img {
+  transform: scale(1.1) rotate(-2deg);
+}
+
+.card h5 {
+  margin-top: 0.6rem;
+  font-size: 1.1rem !important;
+  color: #111 !important;
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.card p {
+  color: #666 !important;
+}
+
+/* Navbar scroll effect específico para index */
+.navbar-scrolled {
+  background-color: rgba(26, 30, 48, 0.95) !important;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* ========== MEDIA QUERIES ========== */
+
+/* Tablets (>=768px) */
+@media (min-width: 768px) {
+  /* Hero */
+  .hero h1 {
+    font-size: 4rem !important;
+  }
+  
+  .hero p {
+    font-size: 1.3rem !important;
+  }
+
+  /* Intro */
+  .intro h2 {
+    font-size: 2.5rem !important;
+  }
+  
+  .intro p {
+    font-size: 1.15rem !important;
+  }
+
+  /* Servicios */
+  .service-icon {
+    font-size: 3rem !important;
+  }
+  
+  .card h5 {
+    font-size: 1.2rem !important;
+  }
+  
+  .card p {
+    font-size: 1rem !important;
+  }
+}
+
+/* Desktop grandes (>=992px) */
+@media (min-width: 992px) {
+  /* Hero */
+  .hero h1 {
+    font-size: 4.5rem !important;
+  }
+  
+  .hero p {
+    font-size: 1.4rem !important;
+  }
+
+  /* Intro */
+  .intro h2 {
+    font-size: 2.8rem !important;
+  }
+  
+  .intro p {
+    font-size: 1.2rem !important;
+  }
+
+  /* Servicios */
+  .card.glass {
+    padding: 2rem !important;
+  }
+}

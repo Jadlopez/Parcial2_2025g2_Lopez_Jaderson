@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto — CoderHub.run</title>
+  <meta name="description" content="Contáctanos en CoderHub.run: desarrollo de software, apps móviles, consultoría tecnológica y soporte confiable.">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <link rel="stylesheet" href="/css/contact.css">
+</head>
+<body class="contact-page">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-custom shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="/">
+        <img src="/img/logo.jpg" alt="Logo de CoderHub.run" width="74" height="74" class="me-2 rounded-circle">
+        <span class="brand-text fw-bold">CoderHub.run</span>
+      </a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="/">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="/pages/about.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="/pages/services.html">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="/pages/projects.html">Proyectos</a></li>
+          <li class="nav-item"><a class="nav-link active" href="/pages/contact.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero-contact d-flex align-items-center text-center text-white">
+    <div id="particles-js-contact"></div>
+    <div class="container animate__animated animate__fadeInUp">
+      <h1 class="display-3 fw-bold">Hablemos 🚀</h1>
+      <p class="lead mt-3">Estamos listos para escuchar tu idea y llevarla al siguiente nivel.</p>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <main>
+    <section class="contact-section py-5">
+      <div class="container">
+        <div class="row g-5">
+          <!-- Formulario -->
+          <div class="col-lg-6 animate__animated animate__fadeInLeft">
+            <div class="card contact-card shadow-lg p-4 border-0">
+              <h3 class="fw-bold mb-3 text-center">Envíanos un mensaje</h3>
+              <form id="contactForm">
+                <div class="mb-3">
+                  <label for="name" class="form-label">Nombre</label>
+                  <input type="text" id="name" class="form-control" placeholder="Tu nombre completo" required>
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Correo</label>
+                  <input type="email" id="email" class="form-control" placeholder="ejemplo@correo.com" required>
+                </div>
+                <div class="mb-3">
+                  <label for="subject" class="form-label">Asunto</label>
+                  <input type="text" id="subject" class="form-control" placeholder="Motivo de tu mensaje" required>
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Mensaje</label>
+                  <textarea id="message" rows="4" class="form-control" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-contact w-100 btn-lg">Enviar <i class="fas fa-paper-plane ms-2"></i></button>
+              </form>
+              <div id="formAlert" class="alert mt-3 d-none"></div>
+            </div>
+          </div>
+
+          <!-- Info de contacto -->
+          <div class="col-lg-6 animate__animated animate__fadeInRight">
+            <div class="card contact-info-card shadow-lg border-0 p-4">
+              <h3 class="fw-bold mb-3">También puedes contactarnos por:</h3>
+              <div class="contact-method">
+                <i class="fas fa-envelope contact-icon"></i>
+                <div>
+                  <strong>Email:</strong> 
+                  <a href="mailto:contacto@coderhub.run">contacto@coderhub.run</a>
+                </div>
+              </div>
+              <div class="contact-method">
+                <i class="fab fa-whatsapp contact-icon"></i>
+                <div>
+                  <strong>WhatsApp:</strong> 
+                  <a href="https://wa.me/573001112233" target="_blank">+57 300 111 2233</a>
+                </div>
+              </div>
+              <div class="contact-method">
+                <i class="fas fa-map-marker-alt contact-icon"></i>
+                <div>
+                  <strong>Oficina:</strong> 
+                  <span>Calle 12 #5-34, Florencia, Caquetá, Colombia</span>
+                </div>
+              </div>
+              <div class="map-responsive mt-4">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.827793039726!2d-75.6121!3d1.6144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e24f6e63f6bbd7f%3A0x5a7b71dd7e5a79d4!2sFlorencia%2C%20Caquet%C3%A1!5e0!3m2!1ses!2sco!4v1694474312345"
+                  width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer pt-5">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-md-4 text-center text-md-start">
+          <a class="navbar-brand d-flex align-items-center mb-3" href="/">
+            <img src="/img/logo.jpg" alt="Logo de CoderHub.run" width="105" height="105" class="me-2 rounded-circle shadow-sm">
+            <span class="fw-bold fs-4 text-white">CoderHub.run</span>
+          </a>
+          <p class="footer-text">Construimos soluciones digitales elegantes, seguras y escalables para el mundo moderno.</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <h6 class="fw-bold text-white mb-3">Enlaces rápidos</h6>
+          <ul class="list-unstyled">
+            <li><a href="/" class="footer-link">Inicio</a></li>
+            <li><a href="/pages/about.html" class="footer-link">Nosotros</a></li>
+            <li><a href="/pages/services.html" class="footer-link">Servicios</a></li>
+            <li><a href="/pages/projects.html" class="footer-link">Proyectos</a></li>
+            <li><a href="/pages/contact.html" class="footer-link">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 text-center text-md-end">
+          <h6 class="fw-bold text-white mb-3">Síguenos</h6>
+          <div class="social-links">
+            <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="github"><i class="fab fa-github"></i></a>
+            <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="discord"><i class="fab fa-discord"></i></a>
+            <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="my-4 border-secondary">
+      <div class="text-center small footer-copy">
+        © 2025 <span class="fw-bold">CoderHub.run</span> — Todos los derechos reservados.
+      </div>
+    </div>
+  </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script src="/js/script.js"></script>
+</body>
+</html>

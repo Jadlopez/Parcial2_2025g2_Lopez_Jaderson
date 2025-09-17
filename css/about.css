@@ -1,0 +1,310 @@
+
+
+body.about-page {
+  background-color: #f9fafc !important;
+  color: #333 !important;
+}
+
+.about-page section,
+.about-page .container,
+.about-page .row,
+.about-page .col,
+.about-page .values-card,
+.about-page .team-card,
+.about-page .hero-about,
+.about-page .history-section,
+.about-page .team-section,
+.about-page .cta-about,
+.about-page .bg-light {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+}
+
+/* =========================
+   HERO (alineado con index.css)
+   ========================= */
+.about-page .hero-about {
+  min-height: 100vh;
+  position: relative;
+  background: linear-gradient(135deg, #1a1a2e, #16213e) !important;
+  overflow: hidden;
+  padding-top: 7rem;
+}
+
+.about-page #particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.about-page .hero-about .container {
+  padding-top: 7rem;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.about-page .hero-about h1 {
+  font-size: 3.5rem !important;
+  color: #fff !important;
+  text-shadow: 0 0 25px rgba(0, 255, 255, 0.5);
+  font-family: 'Poppins', sans-serif !important;
+  margin-bottom: .6rem;
+}
+
+.about-page .hero-about p {
+  font-size: 1.2rem !important;
+  color: #ddd !important;
+  margin-bottom: 1.25rem;
+}
+
+/* Botones en hero (reutiliza apariencia de index) */
+.about-page .hero-about .btn-cta,
+.about-page .hero-about .btn-outline-light,
+.about-page .hero-about .btn {
+  font-weight: 600;
+  border-radius: 2rem;
+}
+
+/* =========================
+   HISTORIA
+   ========================= */
+.about-page .history-section {
+  padding: 3rem 0;
+  background-color: transparent !important;
+}
+
+.about-page .history-section h2 {
+  font-size: 1.8rem;
+  color: #111;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 1rem;
+}
+
+.about-page .history-section p {
+  color: #555;
+  line-height: 1.7;
+}
+
+/* Icon circle (historia / valores) */
+.about-page .icon-circle {
+  background: rgba(0, 198, 255, 0.08);
+  border: 2px solid rgba(0, 198, 255, 0.18);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-page .icon-circle:hover {
+  transform: scale(1.06) rotate(6deg);
+  box-shadow: 0 0 20px rgba(0, 198, 255, 0.25);
+}
+
+/* =========================
+   MISIÓN / VISIÓN / VALORES
+   ========================= */
+.about-page .values-row {
+  gap: 1.5rem;
+}
+
+.about-page .values-card {
+  border: none;
+  border-radius: 1rem;
+  background: rgba(255,255,255,0.95);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  height: 100%;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.about-page .values-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.about-page .values-card h5 {
+  font-size: 1.2rem;
+  color: #007bff; +
+  margin-bottom: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.about-page .values-card p {
+  color: #666;
+}
+
+/* Asegurar que la sección de valores (bg-light) esté visible */
+.about-page section.bg-light {
+  background: linear-gradient(180deg, #f9fafc, #eef2f7) !important;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/* =========================
+   EQUIPO (contenedor + tarjetas)
+   ========================= */
+.about-page .team-section {
+  padding: 3rem 0;
+  background-color: transparent !important;
+  text-align: center;
+}
+
+.about-page .team-section .section-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .5rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-page .team-card {
+  border: none;
+  border-radius: 1rem;
+  background: rgba(255,255,255,0.95);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.about-page .team-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+.about-page .team-card img {
+  border: 4px solid rgba(0, 198, 255, 0.35);
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(0,198,255,0.18);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.about-page .team-card img:hover {
+  transform: scale(1.06) rotate(-2deg);
+  box-shadow: 0 0 25px rgba(0,198,255,0.28);
+}
+
+.about-page .team-card h5 {
+  margin-top: .75rem;
+  margin-bottom: .25rem;
+  font-weight: 700;
+}
+
+.about-page .team-card .role {
+  color: #007bff;
+  font-size: .9rem;
+  margin-bottom: .5rem;
+}
+
+.about-page .team-card p {
+  color: #666;
+  font-size: .95rem;
+}
+
+/* Redes en tarjeta */
+.about-page .team-card .socials a {
+  color: #666;
+  font-size: 1.1rem;
+  margin: 0 .4rem;
+  transition: color .25s;
+}
+.about-page .team-card .socials a:hover { color: #00c6ff; }
+
+/* =========================
+   CTA FINAL 
+   ========================= */
+.about-page .cta-about {
+  padding: 3rem 0;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.about-page .cta-about .box {
+  background: linear-gradient(45deg, #007bff, #00c6ff);
+  border-radius: 1rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
+  color: #fff;
+  padding: 2rem;
+  display: inline-block;
+  max-width: 900px;
+  width: 100%;
+}
+
+.about-page .cta-about h4 { font-size: 1.5rem; margin-bottom: .6rem; }
+.about-page .cta-about p { color: #303944; margin-bottom: 20rem; }
+
+.about-page .cta-about .btn-light {
+  background: #fff;
+  color: #007bff;
+  border-radius: 2rem;
+  padding: 0.8rem 1.8rem;
+  font-weight: 600;
+}
+.about-page .cta-about .btn-light:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+/* =========================
+   NAVBAR - estado activo
+   ========================= */
+.about-page .navbar .nav-link.active {
+  color: #00c6ff !important;
+}
+.about-page .navbar .nav-link.active::after {
+  width: 100%;
+}
+
+/* =========================
+   UTILIDADES Y COLORES LOCALES
+   ========================= */
+.about-page .text-secondary { color: #555 !important; }
+.about-page .text-muted { color: #666 !important; }
+.about-page .bg-light { background-color: #f8f9fa !important; }
+
+/* =========================
+   MEDIA QUERIES 
+   ========================= */
+@media (min-width: 768px) {
+  .about-page .hero-about h1 { font-size: 4rem !important; }
+  .about-page .hero-about p { font-size: 1.3rem !important; }
+  .about-page .history-section h2 { font-size: 2.2rem !important; }
+  .about-page .values-card { padding: 2rem; }
+  .about-page .cta-about .box { padding: 2.5rem; }
+  .about-page .team-card { padding: 1.8rem; }
+}
+
+@media (min-width: 992px) {
+  .about-page .hero-about h1 { font-size: 4.5rem !important; }
+  .about-page .hero-about p { font-size: 1.4rem !important; }
+  .about-page .history-section h2 { font-size: 2.6rem !important; }
+  .about-page .values-card { padding: 2.5rem; }
+  .about-page .team-card { padding: 2rem; }
+  .about-page .cta-about { padding: 4rem 0; margin: 3rem 0; }
+}
+
+/* Reduce motion (accesibilidad) */
+@media (prefers-reduced-motion: reduce) {
+  .about-page .team-card,
+  .about-page .values-card,
+  .about-page .hero-about,
+  .about-page .icon-circle {
+    transition: none !important;
+    transform: none !important;
+    box-shadow: none !important;
+  }
+}
