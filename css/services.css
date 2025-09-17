@@ -5,7 +5,7 @@
 body.services-page {
   background-color: var(--light);
   color: var(--dark);
-  padding-top: 76px; /
+  padding-top: 76px;
 }
 
 /* Forzar visibilidad de secciones ocultas por animaciones globales */
